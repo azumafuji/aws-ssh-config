@@ -43,7 +43,7 @@ def generate_id(instance, tags_filter, region):
 	if region:
 		id += '-' + instance.placement
 
-	return id
+	return id.replace(" ", "_")
 
 
 def main():
